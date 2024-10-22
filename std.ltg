@@ -1,0 +1,7 @@
+id := x -> x.
+empty := 0.
+false := not true.
+@| := p -> q -> not (not p; not q).
+scale := t -> f -> p -> (t ** true ++ f ** false) ** p.
+@\= := x -> y -> not (x = y).
+diff := x -> y -> z -> x \= y; x \= z; y \= z.
